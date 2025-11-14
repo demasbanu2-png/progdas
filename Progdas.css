@@ -1,3 +1,6 @@
+/* ================================
+   RESET DASAR
+================================ */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +14,13 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+main {
+    margin-bottom: 60px; /* Agar footer fixed tidak menimpa konten */
+}
+
+/* ================================
+   NAVBAR
+================================ */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,11 +55,13 @@ body {
     text-decoration: underline;
 }
 
-/* Hero Section */
+/* ================================
+   HERO SECTION
+================================ */
 .hero {
     text-align: center;
     background: linear-gradient(to right, #0078ff, #00b7ff);
-    color: white;
+    color: #fff;
     padding: 80px 20px;
 }
 
@@ -61,9 +72,8 @@ body {
 
 .hero h2 {
     font-size: 2em;
-    margin-bottom: 15px;
-    padding: 20px 0;
     margin: 20px 0;
+    padding: 20px 0;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -73,23 +83,26 @@ body {
 }
 
 .btn {
-    background: white;
+    background: #fff;
     color: #0078ff;
     padding: 10px 25px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
 }
 
 .btn:hover {
     background: #f2f2f2;
 }
 
-/* Features Section (Layanan Kami) */
+/* ================================
+   FEATURES / LAYANAN
+================================ */
 .features {
     text-align: center;
-    padding: 30px 20px 60px; /* lebih dekat ke atas dan beri ruang bawah */
-    margin-top: -40px; /* tarik sedikit ke atas agar menempel dengan hero */
+    padding: 30px 20px 60px;
+    margin-top: -40px; /* efek menempel ke hero */
 }
 
 .features h2 {
@@ -109,7 +122,7 @@ body {
     background: #f9f9f9;
     width: 280px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -118,11 +131,12 @@ body {
     margin-bottom: 10px;
 }
 
-/* About Page */
+/* ================================
+   ABOUT PAGE
+================================ */
 .about-page {
     text-align: center;
     padding: 80px 20px;
-    margin: auto;
 }
 
 .about-page h1 {
@@ -135,15 +149,16 @@ body {
 }
 
 .about {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #333;
-  text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
 }
 
-
-/* Contact Page */
+/* ================================
+   CONTACT PAGE
+================================ */
 .contact-page {
     text-align: center;
     padding: 80px 20px;
@@ -166,19 +181,17 @@ body {
     border-radius: 5px;
 }
 
-/* Footer */
+/* ================================
+   FOOTER
+================================ */
 footer {
     background: #0078ff;
     color: #fff;
     text-align: center;
-    padding: 8px 0; /* kecil dan rapi */
+    padding: 8px 0;
     font-size: 14px;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-}
-
-main {
-    margin-bottom: 60px; /* beri ruang agar footer tidak menimpa konten */
 }
