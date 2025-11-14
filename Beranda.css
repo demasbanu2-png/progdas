@@ -168,7 +168,7 @@ footer {
     background: #0078ff;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 20px; /* Diubah: 15px atas/bawah, 20px kiri/kanan */
     margin-top: 20px;
     font-size: 14px;
 }
@@ -190,4 +190,5 @@ footer {
 #scrollTopBtn:hover {
     background-color: #005fcc;
 }
+
 
