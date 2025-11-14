@@ -6,6 +6,10 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* === Warna dasar & layout umum === */
 body {
     background-color: #ffffff;
@@ -46,6 +50,11 @@ body {
 
 .nav-links li a:hover {
     text-decoration: underline;
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
 }
 
 /* === Hero Section === */
@@ -108,12 +117,13 @@ body {
     width: 300px;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.18);
 }
 
 .card h3 {
@@ -150,7 +160,7 @@ body {
     width: 300px;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .testi-card p {
@@ -171,4 +181,30 @@ footer {
     padding: 15px 0;
     margin-top: 60px;
     font-size: 14px;
+}
+
+/* === Responsive Mode === */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .layanan,
+    .testimoni {
+        padding: 60px 25px;
+    }
+
+    .card, .testi-card {
+        width: 100%;
+        max-width: 320px;
+    }
 }
